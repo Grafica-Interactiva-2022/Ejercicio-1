@@ -4,52 +4,44 @@
     font-family: Enchanted Land;             /* define una fuente la cual fue obtenida de internet*/
     src: url('fonts/Enchanted_Land.otf');  /* indica la ubicación de la fuente */
 }
-title {
-    color: #000000;
-    font-size: 100px;
 
-}
-body {      /* los estilos aplicados a una etiqueta valen para todos los casos */                   
+body {      /* Únicamente se le aplica un estilo de color a la sección de body */                   
 	background-color: #e6d7bd;                    
 }
-a:link {
+a:link { /*Se quiere que los links tengan un color negro*/
 	color: #000000;
 	text-decoration:none; /* para que no subraye los vínculos */ 
 }
-a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
+a:hover {    /* Cuando se pasa el mouse sobre el texto linkeado se debe volver gris */ 
 	color: #adadad;
 }
-h1{     /* estilo para los titulares */ 
-	font-family: Enchanted Land; /* la fuente se asigna según disponibilidad */
+h1{     /* estilo para título de primer orden */ 
+	font-family: Enchanted Land; /* La fuente asignada en todas las secciones del documento es la previamente cargada */
 	color:#000000;
-	font-size: 50px;
+	font-size: 50px; /*El tamaño de la fuente será el más grande, teniendo en cuenta que solo será el titulo principal*/
 	font-weight: bold;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	max-width: 640px; /* ancho máximo del párrafo */
 	margin:auto;          /* margen igual a izquierda y derecha */ 
 } 
-h1:link {
-	color:#000000;
-	cursor: pointer;
-	text-decoration: none;  /* para que no subraye los vínculos en los titulares*/ 
-}
-h2 {
-	font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
+
+h2 { 
+	font-family: Enchanted Land;  
 	color:#663b2a;
-	font-size: 50px;
+	font-size: 50px; /*Los siguientes títulos también serán de igual tamaño pero con un color sepia*/
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 	text-align: left;
 	max-width: 640px;
 	margin:auto;
 	padding:44px 10px 2px 10px;  /* arriba, derecha, abajo, izquierda */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*Se desea poner un valor de margin adicional en la parte inferior*/
 }
 h3 {
-	font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
+	font-family: Enchanted Land;  
 	color:#663b2a;
-	font-size: 35px;
+	font-size: 35px; /*Para titulos de tercer orden también se tiene un color sepia pero un tamaño mas pequeño*/
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 	text-align: left;
@@ -59,9 +51,9 @@ h3 {
 }
 
 h4 {
-	font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
+	font-family: Enchanted Land; 
 	color:#663b2a;
-	font-size: 25px;
+	font-size: 25px; /*Por último se desa que los títulos de tipo 4 sean los más pequeños*/
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 	text-align: left;
@@ -71,23 +63,23 @@ h4 {
 }
 
 
-.parrafo {
+.parrafo { /*Se crea una clase parrafo que dará estilo a los parrafos*/
 	position: relative;
-	max-width:800px;
+	max-width:800px; /*No se quiere que el texto llegue hasta los bordes así que se asigna un ancho máximo*/
 	top: 50px;
 	margin:auto;  /* margen igual a izquierda y derecha */
-    margin-top: 50px;
+    margin-top: 50px;/*Para dar suficiente espacio entre parrafos se agrega margen top y bottom*/
     margin-bottom: 50px;
-	font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
+	font-family: Enchanted Land;  
 	font-size: 30px;
 	font-weight: 5px;
 	text-align: justify;    
 	color:#000000;
 
 }
-.botonMenu {      /* estilo para cada botón del menu de navegación */ 
-	font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
-    background-color:whitesmoke;
+.botonMenu {      /* Se crea un boton menu para el menú principal*/ 
+	font-family: Enchanted Land;  
+    background-color:whitesmoke; /*Se desea un fondo de color distinto*/
 	font-size: 20px;
 	font-style: normal;
 	font-weight: normal;
@@ -96,14 +88,14 @@ h4 {
 	padding:5px 10px 6px 8px;
     margin: 10px 10px 10px 10px;
     margin-bottom: 50px;
-	float: left;
+	float: left; 
 	cursor: pointer;
 }
-.botonMenu:hover{
+.botonMenu:hover{ /*Al pasar el mouse, el botón cambia de color de fondo, debido a que la letra está linkeada también cambiara de color como se menciono anteriormente*/
     background-color: black;
 }
-.botonMenu2 {
-    font-family: Enchanted Land;  /* solo si se suministra el archivo de la fuente */
+.botonMenu2 { /*Se genera un segundo tipo de botón que servirá para navegar dentro de una misma pagina cuando hay mucha información*/
+    font-family: Enchanted Land; 
     background-color:whitesmoke;
 	font-size: 20px;
 	font-style: normal;
@@ -112,17 +104,17 @@ h4 {
 	width: 142px;
 	padding:5px 10px 6px 8px;
     margin:auto;
-    margin-left: 50px;
-	float: left;
+    margin-left: 50px; /*Debido a que se espera que la organización sea vertical es conveniente agregar mas margen a la izquuierda*/
+	float: left; /*No se agrega mas margen por debajo para no separar mucho los botones verticalmente*/
 	cursor: pointer;
 
 }
 
-.botonMenu2:hover{
+.botonMenu2:hover{ /*También se espera que al pasar el puntero se cambie el color del botón*/
     background-color: black;
 }
 
-.img {
+.img { /*Finalmente se realizan las configuraciones de las imágenes */
 	position: relative;
 	float: left;
 	top: 20px;
